@@ -1,0 +1,48 @@
+<body>
+  <div class="container">
+<span class="pull-right">{{> loginButtons}}</span>
+
+      <h1>Task Manager ({{incompleteCount}})</h1>
+
+      <div class="row">
+          <label class="hide-completed">
+            <input type="checkbox" />
+            Hide Completed Tasks
+          </label>
+      </div>
+      {{#if currentUser}}
+      <div class="row">
+      <p>Create a new task and assign to a user</p>
+          <form class="new-task">
+
+            <input type="text" name="text" placeholder="Task Description" />
+            <select id="category-select" name="categoryassignment"  class="selectpicker categoryassignment">
+              <option selected="selected">Ticket Type</option> 
+              {{#each categories}}
+              <option value="{{this}}">{{this}}</option>
+          {{/each}}
+        </select>
+        <select id="user-select" name="userassign" class="selectpicker userassignment">
+          <option selected="selected" value="{{currentUser.username}}">{{currentUser.username}}</option>
+          {{#each allUsers}}
+              <option value="{{username}}">{{username}}</option>
+          {{/each}}
+        </select>
+
+      </form>
+</div>
+      {{/if}} 
+
+            <div class="table-container">
+              <table class="table table-filter">
+                <tbody>
+      {{#each tasks}}
+        {{> task}}
+      {{/each}}
+                </tbody>
+              </table>
+            </div>
+
+  </div>
+
+</body>

@@ -1,0 +1,38 @@
+<template name="task">
+
+                  <tr data-status="status">
+                    <td>
+                      <div class="ckbox">
+                        <input type="checkbox" id="{{this._id}}" checked="{{checked}}" class="toggle-checked" >
+                        <label for="{{this._id}}"></label>
+                      </div>
+                    </td>
+                    <td>
+                      <a href="javascript:;" class="star">
+                        <i class="glyphicon glyphicon-star"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <div class="media">
+                        <a href="#" class="pull-left">
+                          <img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
+                        </a>
+                        <div class="media-body-tasks">
+                          <span class="media-meta pull-right">{{createdAt}}</span>
+                          <h4 class="title">
+                            Assigned to: {{userassign}}
+                            <span class="pull-right {{started}}">        
+				{{#if started}}
+          				Started
+        			{{else}}
+          				Pending
+        			{{/if}}
+				</span>
+                          </h4>
+                          <p class="summary">Task: {{text}}</p>
+			<p class="pull-right">Category: {{category}}</p>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+</template>

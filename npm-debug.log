@@ -1,0 +1,28 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'shrinkwrap' ]
+2 info using npm@3.5.2
+3 info using node@v4.2.6
+4 verbose stack Error: Problems were encountered
+4 verbose stack Please correct and try again.
+4 verbose stack extraneous: jquery@3.2.1 /home/mcdowell/domains/node.mcdowell.space/public_html/simple-todos/node_modules/jquery
+4 verbose stack     at shrinkwrap_ (/usr/share/npm/lib/shrinkwrap.js:101:15)
+4 verbose stack     at /usr/share/npm/lib/shrinkwrap.js:36:5
+4 verbose stack     at /usr/share/npm/node_modules/iferr/index.js:13:50
+4 verbose stack     at /usr/share/npm/lib/install/deps.js:121:5
+4 verbose stack     at LOOP (/usr/share/npm/node_modules/slide/lib/chain.js:7:26)
+4 verbose stack     at /usr/share/npm/node_modules/slide/lib/chain.js:18:7
+4 verbose stack     at cb (/usr/share/npm/node_modules/slide/lib/async-map.js:47:24)
+4 verbose stack     at /usr/share/npm/lib/install/deps.js:121:5
+4 verbose stack     at LOOP (/usr/share/npm/node_modules/slide/lib/chain.js:7:26)
+4 verbose stack     at /usr/share/npm/node_modules/slide/lib/chain.js:18:7
+5 verbose cwd /home/mcdowell/domains/node.mcdowell.space/public_html/simple-todos
+6 error Linux 4.4.0-83-generic
+7 error argv "/usr/bin/nodejs" "/usr/bin/npm" "shrinkwrap"
+8 error node v4.2.6
+9 error npm  v3.5.2
+10 error Problems were encountered
+10 error Please correct and try again.
+10 error extraneous: jquery@3.2.1 /home/mcdowell/domains/node.mcdowell.space/public_html/simple-todos/node_modules/jquery
+11 error If you need help, you may report this error at:
+11 error     <https://github.com/npm/npm/issues>
+12 verbose exit [ 1, true ]
